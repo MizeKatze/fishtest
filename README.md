@@ -75,3 +75,29 @@ of the site, open a console window in *fishtest/fishtest* directory and do:
 sudo python setup.py develop
 ./start.sh
 ```
+
+
+In German
+
+C:\fishtest-master\fishtest-master\worker>C:\Python27\python.exe worker.py --concurrency 5 username password
+Dann einfach Enter drücken und fertig.
+Am besten ihr speichert euch diesen Satz bei Word mit eurem richtigen username und password, dann könnt ihr den Satz ganz einfach und vor allem sehr schnell mit copy und paste in das schwarze Fenster einfügen.
+
+Ein kleiner Trick:
+https://github.com/glinscott/fishtest/blob/master/README.md download http://www.python.org/ftp/python/2.7.4/python-2.7.4.msi und https://github.com/glinscott/fishtest/archive/master.zip installiert beide unter C. Danach:
+Man geht auf Lokaler Datenträger C Doppelklick, fishtest-master Doppelklick, fishtest-master Doppelklick, worker Doppelklick und jetzt einfach nichts auswählen, sondern auf der leeren weißen Fläche linke Umschalttaste + rechte Maustaste klicken.
+Dann öffnet sich ein kleines Fenster, dort Eingabeaufforderung hier öffnen anklicken.
+Jetzt hat sich das schwarze Fenster geöffnet in dem steht jetzt C:\fishtest-master\fishtest-master\worker>
+Ihr müsst jetzt nur noch dahinter C:\Python27\python.exe worker.py --concurrency 5 username password eingeben.
+
+--concurrency bedeutet Anzahl der Kerne die euer PC hat.
+Mein PC hat 6 Kerne deshalb habe ich --concurrency 5 eingegeben, da 1 Kern fürs Betriebssystem und für die unsichtbaren PC/Windows Programme nötig ist.
+Habt ihr 1 Kern gebt ihr --concurrency 1 ein
+Habt ihr 2 Kerne gebt ihr --concurrency 1 ein
+Habt ihr 4 Kerne gebt ihr --concurrency 3 ein
+Habt ihr 6 Kerne gebt ihr --concurrency 5 ein
+Habt ihr 8 Kerne gebt ihr --concurrency 7 ein
+Habt ihr 12 Kerne gebt ihr --concurrency 11 ein
+Habt ihr 16 Kerne gebt ihr --concurrency 15 ein
+Habt ihr 32 Kerne gebt ihr --concurrency 31 ein
+Habt ihr 64 Kerne gebt ihr --concurrency 63 ein
